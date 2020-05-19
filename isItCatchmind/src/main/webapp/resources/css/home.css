@@ -1,0 +1,14 @@
+.textForm {
+	height : 50;
+	width : 500;
+	font-size: 40;
+}
+.button {
+	background-color : white;
+	border: none;
+    cursor: pointer;
+    transform: translate( 0%, +30%);
+}
+div.write {
+	transform: translate( +3  %, 0%);
+}

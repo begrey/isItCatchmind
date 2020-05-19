@@ -1,0 +1,73 @@
+body {
+	text-align:center;
+}
+div.rBox {
+	width : 25%;
+	display: inline-block;
+	position: relative;
+}
+div.box {
+	height : 25%;
+	width : 25%;
+	display: inline-block;
+	position: relative;
+}
+div.chat {
+	text-align: center;
+	position: absolute;
+	width:90%;
+	height:50%;
+	left: 50%;
+	transform: translate( -50%, -120%);
+	font-size : 20;
+}
+
+div.user {
+	text-align: center;
+	position: absolute;
+	width:90%;
+	height:40%;
+	left: 50%;
+	transform: translate( -50%, -100%);
+	font-size : 20;
+}
+img#user {
+	height : 130;
+	width : 230;
+}
+.grid {
+		position: relative;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center; /*inline-block의 장점은 폰트의 성질도 포함되고 있어서 text-align으로 정렬을 쉽게 할수가 있다.*/
+        font-size: 0; /*양 옆쪽, 밑에 4px정도 여백을 없에주는 방법 하지만 크로스브라우징 호환성헤서는 문제가 있다.*/
+}
+.grid:before {
+	display: block;
+	padding-top: 50%;
+}
+.nick {
+	height : 100%;
+	width : 100%;
+	display: inline-block;
+	position: relative;
+}
+.textForm {
+	height : 50;
+	width : 500;
+	font-size: 40;
+}
+.button {
+	background-color : white;
+	border: none;
+    cursor: pointer;
+    transform: translate( 0%, +30%);
+}
+.ready {
+	height : 5%;
+	width : 40%;
+}
+div.write {
+	transform: translate( +3%, 0%);
+}
+
