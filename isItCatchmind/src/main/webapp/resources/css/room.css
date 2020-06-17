@@ -58,6 +58,8 @@ img#user {
 	font-size: 40;
 }
 .button {
+	height : 10%;
+	width : 10%;
 	background-color : white;
 	border: none;
     cursor: pointer;
@@ -69,5 +71,34 @@ img#user {
 }
 div.write {
 	transform: translate( +3%, 0%);
+	position: relative;
+}
+.exitBt {
+	position: absolute;
+	background-color : white;
+	border: none;
+    cursor: pointer;
+    left : 80%;
+    height : 10%;
+	width : 10%;
+}
+.exit {
+	width : 100%;
+	height : 80%
+}
+.submit {
+	height : 100%;
+	width : 90%;
+}
+.RdButton {
+	background-color : white;
+	border: none;
+    cursor: pointer;
+    height : 10%;
+	width : 10%;
+}
+.readyBt {
+	height : 60%;
+	width : 100%;
 }
 

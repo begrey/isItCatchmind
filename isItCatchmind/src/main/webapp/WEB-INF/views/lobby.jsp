@@ -22,11 +22,9 @@
 	<br/>
 
 	<div id="messages"></div>
-		방에 입장할까? <a href="<c:url value="/room/view" />">ROOM 입장</a>
+		방에 입장할까? <a href="<c:url value="/game" />">ROOM 입장</a>
 		<br />
-		방을 맹글어볼까? <a href="<c:url value="/room/create" />">ROOM 생성</a>
-		<br />
-		게임 <a href="<c:url value="/room/game" />">게임화면</a>
+		게임 <a href="<c:url value="/game" />">게임화면</a>
 
 	
 </body>

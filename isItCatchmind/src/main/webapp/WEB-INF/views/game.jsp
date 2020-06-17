@@ -12,29 +12,25 @@
 </head>
 <body>
    환영한다 <strong>${userSession}</strong>
-   <div class="select">
-   <button id="e">삭제</button>
-   </div>
-   <div id="color" class="radioSelect">
-     <input type="radio" name="red" id="red" class="red" onclick="selectColor(this.name)"/>
-     <label for="red"></label>
-     <input type="radio" name="blue" id="blue" class="blue" onclick="selectColor(this.name)"/>
-     <label for="blue"></label>
-     <input type="radio" name="yellow" id="yellow" class="yellow" onclick="selectColor(this.name)"/>
-     <label for="yellow"></label>
-     <input type="radio" name="green" id="green" class="green" onclick="selectColor(this.name)"/>
-     <label for="green"></label>
-     <input type="radio" name="black" id="black" class="black" onclick="selectColor(this.name)"/>
-     <label for="black"></label>
-     <input type="range" name="thick" id="thick" class="thick" value="1" min="1" max="10" onchange="selectThick(this)" />
-     <button id="eraser">지우개</button>
-     <button id="showDrawing" onclick="toDataURL()">제출</button>
-    </div>
-   <div>
-      <canvas id="canvas">
-      </canvas>
-   </div>
-   <img id="myImage">
-   <script type="text/javascript" src="<c:url value="/resources/js/game.js"/>"></script>
+   <table>
+        <thead>
+            <tr>
+                <th>아이디</th>
+                <th>비밀번호</th>
+                <th>이름</th>
+            </tr>
+        </thead>
+        <tbody>
+            <c:forEach items="${questionList}" var="question">
+                <tr>
+                    <td>${question.q_id}</td>
+                    <td>${question.answer}</td>
+                    <td>${question.category}</td>
+                </tr>
+            </c:forEach>
+        </tbody>
+    </table>
+
+
 </body>
 </html>

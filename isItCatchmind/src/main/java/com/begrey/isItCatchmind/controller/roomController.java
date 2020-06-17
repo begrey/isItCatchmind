@@ -15,7 +15,6 @@ public class roomController {
 	private String roomViewName = "room";	
 	private String roomFormName = "create";
 	private String lobbyViewName = "lobby";
-	private String gameViewName = "game";
 	@RequestMapping(value="/view")
 	public String showRoom() {
 		return roomViewName;
@@ -32,10 +31,6 @@ public class roomController {
 	@RequestMapping(value="/addUser")
 	public String gogo(){
 		return roomViewName;
-	}
-	@RequestMapping(value="/game")
-	public String playGame() {
-		return gameViewName;
 	}
 	@RequestMapping(value="/lobby")
 	public String returnLobby() {

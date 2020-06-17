@@ -15,7 +15,7 @@
 <div class="write">
 <form action="<c:url value="/user/create" />" method="post">
 	<input class="textForm" name="nickName" type="text"/>
-	<button class="button" type="submit" name="submit" ><img src="<c:url value="/resources/img/입력.png" />" /></button>
+	<button class="button" type="submit"><img class="submit" src="<c:url value="/resources/img/입력.png" />" /></button>
 </form>
 </div>
 <img src="<c:url value="/resources/img/캐릭터누끼.png" />" />
